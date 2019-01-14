@@ -1,0 +1,208 @@
+* { 
+    box-sizing: border-box;
+}
+/*@font-face {
+   font-family: 'PTSans';
+   src: url('PTS55F.ttf');
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'PTSansBold';
+   src: url('PT_Sans_Bold.ttf'); 
+}
+@font-face {
+   font-family: 'PTSansI';
+   src: url('PT_Sans_Italic.ttf'); 
+}*/
+
+body {
+   font-family:  'PTSans', 'Trebuchet MS', Helvetica, Arial, Sans-Serif; 
+}
+a {
+   text-decoration: none; 
+   padding: 0 0.5em;
+   margin: 0 0 0.5em 0;
+}
+  
+h2,p{ 
+   margin-top: 0.5em;
+   margin-bottom: 0.5em;
+} 
+ 
+#chartdiv{  
+  background-color: #ffffff; 
+} 
+
+#chart_title{  
+   color: #333333;
+   font-family: "Avenir Next Cyr W00 Bold", Helvetica, Arial, sans-serif;
+   font-weight: normal;
+} 
+
+#chart_source{  
+  font-size: 0.8em;
+  background-color: #ffffff;
+  padding: 20px 50px 40px 50px;
+  margin-bottom: 20px;
+} 
+#chart_notes{  
+   text-align: left;
+   font-size: 0.8em;
+   font-style: italic;
+}
+
+#chart_notes b:nth-child(3){
+  margin-top: 10px;
+  display: block;
+}
+
+#chart_notes{
+  padding-left: 0;
+  padding-right: 0; 
+}
+
+div.heading {
+   padding: 1.5em;
+}
+   
+  /* Tooltip container */
+.actions-tooltip {
+   position: relative;
+   display: inline-block; 
+}
+
+/* Tooltip text */
+.actions .tooltiptext {
+   visibility: hidden; 
+   background-color: white;
+   color: black;
+   text-align: left;
+   padding: 5px 0;
+   border-radius: 6px;
+   opacity: 0.7;
+   font-size: 0.8em;
+   top: 20px; 
+
+   /* Position the tooltip text - see examples below! */
+   position: absolute;
+   z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.actions:hover .tooltiptext {
+   visibility: visible; 
+}
+ p.help { 
+   color: black;
+   text-align: left;
+   padding: 0.5em; 
+   opacity: 0.7;
+   font-size: 0.8em; 
+}
+    
+div.help {
+   text-align: right;
+}   
+
+ 
+/*---- Overrides ----*/
+/*-- c3 overrides --*/
+/*-- Chart --*/  
+.c3 svg { 
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transition: font-size 0.5s; /* Safari */
+  transition: font-size 0.5s;
+}  
+
+@media only screen and (max-width:450px) {
+  .c3 svg { font-size: 0.6em;  } 
+}   
+@media only screen and (min-width:451px) and (max-width:600px) {
+  .c3 svg { font-size:0.65em;  } 
+}   
+@media only screen and (min-width:601px) and (max-width:768px) {
+  .c3 svg { font-size: 0.7em; } 
+}   
+@media only screen and (min-width:769px) and (max-width:800) {
+  .c3 svg { font-size: 0.75em; } 
+}   
+@media only screen and (min-width:901px) and (max-width:1000px) {
+  .c3 svg { font-size: 0.8em; } 
+}   
+@media only screen and (min-width:1001px){ 
+  .c3 svg { font-size: 0.85em; } 
+} 
+  
+.c3-tooltip-container {
+   z-index: 10; 
+   border-radius: 25px;
+}
+  
+.c3-tooltip {
+   border-collapse: collapse;
+   border-spacing: 0;
+   background-color: #fff;
+   empty-cells: show;
+   -webkit-box-shadow: 7px 7px 12px -9px #777777;
+   -moz-box-shadow: 7px 7px 12px -9px #777777;
+   box-shadow: 7px 7px 12px -9px #777777;
+   opacity: 0.9;
+}
+
+table.c3-tooltip  {
+   border-collapse:separate;
+   border:solid  #aaa 1px;
+   border-radius:6px;
+   -moz-border-radius:6px;
+}
+.c3-tooltip tr {
+   }
+
+.c3-tooltip th {
+   background-color:#FFF;
+   font-size: 11px;
+   padding: 2px 2px;
+   text-align: left;
+   color:  black;
+   opacity: 0.5;  
+}
+
+.c3-tooltip td {
+   font-size: 11px;
+   padding: 3px 6px;
+   background-color: #fff;
+   border-left: none; 
+}
+
+.c3-tooltip td > span {
+   display: inline-block;
+   width: 10px;
+   height: 10px;
+   margin-right: 6px; 
+}
+
+.c3-tooltip td.value {
+   text-align: right;
+}  
+
+.hidden {
+   display: none;
+}  
+
+
+
+ 
+ 
+
+
+
+ 
+
+
+
+
+    
+    
+
+    
